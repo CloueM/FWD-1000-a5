@@ -33,7 +33,6 @@ body {
 	color: #282828;
 	background-color: #ffffff;
 	padding-bottom: .5rem;
-
 }
 
 h1,
@@ -98,6 +97,7 @@ a:active {
 --------------------------------------------- */
 .site-header {
 	background-color: #fffacd;
+	z-index: 10;
 }
 
 .site-header-width {
@@ -125,7 +125,6 @@ a.site-name {
 	left:0;
 	width:100%;
 	z-index:10;
-
 }
 
 .site-navigation ul {
@@ -150,19 +149,28 @@ a.site-name {
 @media (min-width: 50em) {
 
 	.site-header {
-		
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
 	}
 
 	.site-navigation {
+		position: static;
+		width: auto;
 		padding: 0 1rem;
 		flex: 1 1 auto;
-
 	}
-
+	.site-navigation ul {
+		justify-content: flex-end;
+	}
+	.site-name{
+		margin:0;
+	}
 	.nav-menu li{
 		display: flex;
 		justify-content: flex-end;
-		flex: 1 1 auto;
+		width: auto;
 	}
 
 	.site-navigation a {
