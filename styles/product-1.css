@@ -198,15 +198,23 @@ a.site-name {
 @media (min-width: 50em) {
 
 	.site-main {
-		
+		display: flex;
+		padding-top: 6rem;
+		flex-direction: row-reverse;
 	}
 
 	.col-right {
-
+		flex: 0 0 300px;
+		order: 1;
+		position: sticky;
+		top: 4.5rem;
+		align-self: flex-start;
 	}
 	
 	.col-left {
-
+		flex: 1 1 auto;
+		order: 2;
+		
 	}
 
 }
