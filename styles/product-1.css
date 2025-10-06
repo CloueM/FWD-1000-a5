@@ -32,6 +32,8 @@ body {
 	line-height: 1.5;
 	color: #282828;
 	background-color: #ffffff;
+	padding-bottom: .5rem;
+
 }
 
 h1,
@@ -274,6 +276,7 @@ a.cart-link {
 	text-align: center;
 	padding: 2rem;
 	margin-bottom: 3.5rem;
+	
 }
 
 .site-footer p {
